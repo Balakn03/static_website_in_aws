@@ -1,0 +1,142 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Kanna Multi Cuisine Restaurant</title>
+<style>
+  body { 
+    font-family: 'Arial', sans-serif; 
+    margin: 0; 
+    padding: 0; 
+    box-sizing: border-box; 
+    background-color: #f2f2f2;
+  }
+  .navbar { 
+    background-color: #333; 
+    overflow: hidden; 
+    box-shadow: 0 2px 5px rgba(0,0,0,0.2);
+  }
+  .navbar a { 
+    float: left; 
+    display: block; 
+    color: white; 
+    text-align: center; 
+    padding: 14px 20px; 
+    text-decoration: none; 
+    transition: background-color 0.3s ease;
+  }
+  .navbar a:hover { 
+    background-color: #555;
+  }
+  .main-header { 
+    padding: 80px; 
+    text-align: center; 
+    background: linear-gradient(45deg, #1abc9c, #3498db); 
+    color: white; 
+    margin-bottom: 40px; 
+    box-shadow: 0 2px 5px rgba(0,0,0,0.2);
+  }
+  .main-header h1 { 
+    font-size: 50px; 
+    margin-bottom: 10px; 
+  }
+  .container { 
+    padding: 20px; 
+    background-color: #fff; 
+    border-radius: 5px; 
+    box-shadow: 0 2px 5px rgba(0,0,0,0.1); 
+    margin-bottom: 20px; 
+  }
+  .footer { 
+    background-color: #333; 
+    color: white; 
+    text-align: center; 
+    padding: 10px; 
+    position: fixed; 
+    bottom: 0; 
+    width: 100%; 
+    box-shadow: 0 -2px 5px rgba(0,0,0,0.2);
+  }
+  .menu-item { 
+    background-color: #f9f9f9; 
+    margin: 15px 0; 
+    padding: 15px; 
+    border-left: 5px solid #1abc9c; 
+    transition: background-color 0.3s ease; 
+    border-radius: 5px; 
+  }
+  .menu-item h4 { 
+    margin: 5px 0; 
+    color: #333; 
+  }
+  .menu-item p { 
+    margin: 5px 0; 
+    font-size: 0.9em; 
+    color: #666; 
+  }
+  .menu-item:hover { 
+    background-color: #f2f2f2; 
+  }
+</style>
+</head>
+<body>
+
+<div class="navbar">
+  <a href="#home">Home</a>
+  <a href="#about">About</a>
+  <a href="#menu">Menu</a>
+  <a href="#contact">Contact</a>
+</div>
+
+<div class="main-header">
+  <h1>Welcome to Kanna Multi Cuisine Restaurant</h1>
+  <p>Delight in the flavors from around the world.</p>
+</div>
+
+<div class="container" id="about">
+  <h2>About Us</h2>
+  <p>At Kanna Multi Cuisine Restaurant, we offer a culinary journey across the globe. Our expert chefs bring you the finest flavors with fresh ingredients.</p>
+</div>
+
+<div class="container" id="menu">
+  <h2>Our Menu</h2>
+  <div class="menu-item">
+    <h4>Margherita Pizza</h4>
+    <p>Classic delight with 100% pure mozzarella cheese.</p>
+  </div>
+  <div class="menu-item">
+    <h4>Tandoori Paneer</h4>
+    <p>Paneer marinated in tandoori masala and grilled to perfection.</p>
+  </div>
+  <div class="menu-item">
+    <h4>Spaghetti Carbonara</h4>
+    <p>A rich and creamy sauce with bacon and a hint of garlic.</p>
+  </div>
+</div>
+
+<div class="container" id="contact">
+  <h2>Contact Us</h2>
+  <p>For reservations, please call us at 9087654321 or visit us.</p>
+</div>
+
+<div class="footer">
+  <p>© 2024 Kanna Multi Cuisine Restaurant. All rights reserved.</p>
+</div>
+
+<script>
+  document.addEventListener('DOMContentLoaded', function() {
+    var menuItems = document.querySelectorAll('.menu-item');
+    menuItems.forEach(function(item) {
+      item.addEventListener('mouseenter', function() {
+        this.style.backgroundColor = '#eaeaea';
+      });
+      item.addEventListener('mouseleave', function() {
+        this.style.backgroundColor = '#f9f9f9';
+      });
+    });
+  });
+</script>
+
+</body>
+</html>
